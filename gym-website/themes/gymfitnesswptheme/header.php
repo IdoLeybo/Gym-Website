@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php wp_head(); ?>
     <title>Document</title>
 </head>
 <body>
@@ -24,9 +25,9 @@
                     'container_class' => 'main-menu'
                 );
                 wp_nav_menu($args)
-
                 ?>
 
         </div><!--.navigation-bar-->
+        
     </div><!--.container-->
 </header>
