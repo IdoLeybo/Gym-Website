@@ -61,6 +61,18 @@ h3 {
     font-size: 3.6rem;
 }
 
+/** Utilities **/
+.text-center {
+    text-align: center;
+}
+.text-primary {
+    color: var(--primary);
+}
+.section {
+    padding: 5rem 0;
+
+}
+
 /** Globals **/
 a {
     text-decoration: none;
@@ -208,5 +220,33 @@ img {
 @media (min-width: 768px) {
     .copyright {
         flex: 0 0 auto;
+    }
+}
+
+/** Page Template **/
+.page h1 {
+    margin-bottom: 4rem;
+}
+.page.no-sidebar {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.featured-image {
+    margin-bottom: 3rem;
+}
+
+
+/** Page with sidebars **/
+@media (min-width: 768px) {
+    .page.with-sidebar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .with-sidebar .page-content {
+        flex: 0 0 calc(60% - 2rem);
+    }
+    .with-sidebar .sidebar {
+        flex: 0 0 calc(40% - 2rem);
+
     }
 }
