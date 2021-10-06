@@ -7,12 +7,11 @@
                     'container_class' => 'footer-menu'
                 );
                 wp_nav_menu($args)
-                ?>
-                <p class="copyright">All Rights Reserved. <?php echo get_bloginfo( 'name' ) . " " . date('Y');?> </p>
+        ?>
+        <p class="copyright">All Rights Reserved. <?php echo get_bloginfo( 'name' ) . " " . date('Y');?> </p>
     </div>
 </footer>
-
-<?php wp_footer() ?>
+    <?php wp_footer() ?>
 </body>
 
 </html>

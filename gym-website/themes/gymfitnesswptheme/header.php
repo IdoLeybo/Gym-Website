@@ -28,6 +28,5 @@
                 ?>
 
         </div><!--.navigation-bar-->
-        
     </div><!--.container-->
 </header>
