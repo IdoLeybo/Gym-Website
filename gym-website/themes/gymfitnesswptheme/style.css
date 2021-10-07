@@ -329,11 +329,14 @@ img {
 }
 
 /** Single class **/
+
 p.content-class {
+
     font-weight: 700;
     font-size: 2rem;
     font-family: var(--secondaryFont);
     text-align: center;
+
 }
 
 /** Sidebar **/
@@ -416,3 +419,4 @@ p.content-class {
         grid-row: 2 / 4;
     }
 }
+
