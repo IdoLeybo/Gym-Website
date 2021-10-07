@@ -8,7 +8,6 @@ get_header(); ?>
             <h1 class="text-center text-primary"><?php the_title(); ?></h1>
             <?php
                 $gallery = get_post_gallery(get_the_ID(), false); // true - display the gallery, false - just pass the value to the variable
-
                 $gallery_images_ids = explode(',', $gallery['ids']);
             ?>
             <ul class="gallery-images">
@@ -20,9 +19,11 @@ get_header(); ?>
                         $imageThumb = wp_get_attachment_image_src($id, $size);
 
                         ?>
-                        <a href="<?php echo $image[0] ?>" data-lightbox="gallery">
-                            <img src="<?php echo $imageThumb[0] ?>" />
-                        </a>
+                        <li>
+                            <a href="<?php echo $image[0] ?>" data-lightbox="gallery">
+                                <img src="<?php echo $imageThumb[0] ?>" />
+                            </a>
+                        </li>
                 <?php $i++; endforeach; ?>
             </ul>
         <?php endwhile; ?>
