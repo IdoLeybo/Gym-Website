@@ -63,9 +63,11 @@ h3 {
 .text-center {
     text-align: center;
 }
+
 .text-primary {
     color: var(--primary);
 }
+
 .section {
     padding: 5rem 0;
 }
@@ -80,15 +82,18 @@ ul {
     padding: 0;
     margin: 0;
 }
+
 .logo {
     display: flex;
     justify-content: center;
 }
+
 .container {
     max-width: 120rem;
     width: 95%;
     margin: 0 auto;
 }
+
 img {
     max-width: 100%;
     height: auto;
@@ -106,6 +111,7 @@ img {
         justify-content: space-between;
     }
 }
+
 .navigation-bar {
     align-items: center;
 }
@@ -165,6 +171,7 @@ img {
     color: var(--primary);
     background-color: transparent;
 }
+
 .slicknav_btn {
     background-color: var(--primary);
 }
@@ -216,14 +223,17 @@ img {
         flex: 0 0 auto;
     }
 }
+
 /** Page Template **/
 .page h1 {
     margin-bottom: 4rem;
 }
+
 .page.no-sidebar {
     max-width: 80rem;
     margin: 0 auto;
 }
+
 .featured-image {
     margin-bottom: 3rem;
 }
@@ -246,6 +256,7 @@ img {
 .classes-list {
     margin-top: 4rem;
 }
+
 @media (min-width: 768px) {
     .classes-list {
         display: flex;
@@ -287,6 +298,7 @@ img {
     padding: 3rem 0;
     text-align: center;
 }
+
 @media (min-width: 768px) {
     .card .card-content {
         position: absolute;
@@ -317,9 +329,47 @@ img {
 }
 
 /** Single class **/
-.content-class {
+
+p.content-class {
     font-weight: 700;
     font-size: 2rem;
     font-family: var(--secondaryFont);
     text-align: center;
+}
+
+/** Sidebar **/
+.sidebar a {
+    color: var(--black);
+}
+
+.sidebar .widget {
+    margin-bottom: 2rem;
+}
+
+.sidebar-class {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.sidebar .sidebar-widget-image {
+    flex: 0 0 30%;
+}
+
+.sidebar .class-content {
+    flex: 0 0 calc(70% - 2rem);
+}
+
+.sidebar .class-content p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.sidebar h3 {
+    color: var(--primary);
+}
+
+.sidebar .classes-header {
+    margin-bottom: 2rem;
 }
