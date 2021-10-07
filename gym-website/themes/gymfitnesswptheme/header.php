@@ -26,7 +26,6 @@
                 );
                 wp_nav_menu($args)
                 ?>
-
         </div><!--.navigation-bar-->
     </div><!--.container-->
 </header>
