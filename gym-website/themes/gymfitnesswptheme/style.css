@@ -11,7 +11,6 @@
 
 :root {
     /** Fonts **/
-
     --mainFont : 'Staatliches', cursive;
     --textFont : 'Open Sans', sans-serif;
     --secondaryFont: 'Raleway', sans-serif;
@@ -23,7 +22,6 @@
 
     --white : #ffffff;
     --black : #000000;
-
 }
 
 html {
@@ -65,9 +63,11 @@ h3 {
 .text-center {
     text-align: center;
 }
+
 .text-primary {
     color: var(--primary);
 }
+
 .section {
     padding: 5rem 0;
 }
@@ -82,15 +82,18 @@ ul {
     padding: 0;
     margin: 0;
 }
+
 .logo {
     display: flex;
     justify-content: center;
 }
+
 .container {
     max-width: 120rem;
     width: 95%;
     margin: 0 auto;
 }
+
 img {
     max-width: 100%;
     height: auto;
@@ -108,6 +111,7 @@ img {
         justify-content: space-between;
     }
 }
+
 .navigation-bar {
     align-items: center;
 }
@@ -134,7 +138,6 @@ img {
     .main-menu li:last-of-type {
         margin-right: 0;
     }
-
 }
 
 .main-menu a {
@@ -168,6 +171,7 @@ img {
     color: var(--primary);
     background-color: transparent;
 }
+
 .slicknav_btn {
     background-color: var(--primary);
 }
@@ -219,18 +223,20 @@ img {
         flex: 0 0 auto;
     }
 }
+
 /** Page Template **/
 .page h1 {
     margin-bottom: 4rem;
 }
+
 .page.no-sidebar {
     max-width: 80rem;
     margin: 0 auto;
 }
+
 .featured-image {
     margin-bottom: 3rem;
 }
-
 
 /** Page with sidebars **/
 @media (min-width: 768px) {
@@ -244,4 +250,125 @@ img {
     .with-sidebar .sidebar {
         flex: 0 0 calc(40% - 2rem);
     }
+}
+
+/** Classes list **/
+.classes-list {
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .classes-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.card {
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex: 0 0 calc(50% - 2rem);
+        position: relative;
+    }
+
+    .gradient::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0+0,0.4+84,0.4+100 */
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 84%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 84%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 84%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+    }
+}
+
+.card img {
+    display: block;
+}
+
+.card .card-content {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .card .card-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        padding: 2rem;
+        text-align: left;
+    }
+}
+
+.card .card-content a {
+    color: var(--black);
+}
+
+@media (min-width: 768px) {
+    .card .card-content a {
+        color: var(--white);
+    }
+}
+
+.card .card-content p {
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/** Single class **/
+p.content-class {
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: var(--secondaryFont);
+    text-align: center;
+}
+
+/** Sidebar **/
+.sidebar a {
+    color: var(--black);
+}
+
+.sidebar .widget {
+    margin-bottom: 2rem;
+}
+
+.sidebar-class {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.sidebar .sidebar-widget-image {
+    flex: 0 0 30%;
+}
+
+.sidebar .class-content {
+    flex: 0 0 calc(70% - 2rem);
+}
+
+.sidebar .class-content p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.sidebar h3 {
+    color: var(--primary);
+}
+
+.sidebar .classes-header {
+    margin-bottom: 2rem;
 }
