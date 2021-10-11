@@ -142,6 +142,20 @@ img {
     .navigation-bar {
         display: flex;
         justify-content: space-between;
+        transition: all .5s ease;
+    }
+
+    .fixed-top {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 1rem 5rem;
+        background-color: var(--darkGray);
+        z-index: 10000;
+    }
+    .fixed-top img {
+        width: 15rem;
     }
 }
 
@@ -215,6 +229,13 @@ body.home .site-header {
     font-size: 2.8rem;
     font-family: var(--mainFont);
     padding: .5rem 2rem;
+}
+
+@media (min-width: 768px) {
+    .main-menu a {
+        font-size: 2rem;
+        padding: .5rem 1rem;
+    }
 }
 
 .main-menu .current_page_item {

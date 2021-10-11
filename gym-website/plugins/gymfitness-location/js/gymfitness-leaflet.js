@@ -17,5 +17,5 @@ document.addEventListener('DOMContentLoaded', () => {
             .bindPopup(address)
             .openPopup();
     }
-    
+
 })

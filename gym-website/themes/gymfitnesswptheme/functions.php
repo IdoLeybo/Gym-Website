@@ -66,6 +66,9 @@ function gymfitness_setup() {
     add_image_size('blog', 966, 644, true);
 
     add_theme_support('post-thumbnails');
+
+    // Add SEO titles
+    add_theme_support('title-tag');
 }
 
 add_action('after_setup_theme', 'gymfitness_setup');
